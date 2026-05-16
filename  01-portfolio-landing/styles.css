@@ -1,0 +1,190 @@
+/* ================================
+   FONTS — CDN se aa rahe hain
+   No local font files needed
+================================ */
+:root {
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Space Grotesk', sans-serif;
+    --font-italic: 'Cormorant Garamond', serif;
+
+    --color-primary: #14ffb9;
+    --color-primary-dark: #13c199;
+    --color-bg: #000;
+    --color-text: #fff;
+    --color-muted: #b9f6ea;
+    --color-accent: #5e2508;
+}
+
+/* ================================
+   RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   BODY
+================================ */
+body {
+    min-height: 100vh;
+    background: radial-gradient(
+        ellipse at center,
+        #12342a 0%,
+        var(--color-bg) 70%
+    );
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* Text logo — no image needed */
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+nav a {
+    padding: 6px 14px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.95em;
+    font-family: var(--font-body);
+    font-weight: 300;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+}
+
+nav a.highlight-link {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* ================================
+   HERO
+================================ */
+.hero {
+    text-align: center;
+    padding-top: 80px;
+    padding-inline: 20px;
+}
+
+.hero h1 {
+    font-size: 3.4em;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: var(--font-heading);
+}
+
+.hero .highlight {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.hero em {
+    font-style: italic;
+    font-family: var(--font-italic);
+    font-size: 1.1em;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 14px 44px;
+    background: var(--color-primary);
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.cta-btn:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+.desc {
+    color: var(--color-muted);
+    margin-top: 24px;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.desc .link {
+    color: var(--color-primary);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.desc .link:hover {
+    color: #f5a623;
+}
+
+/* ================================
+   STATS
+================================ */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+
+.stats > div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.stats span {
+    font-size: 0.95em;
+    color: var(--color-muted);
+    font-weight: 300;
+}
